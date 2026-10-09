@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MashDaddy® Suribachi Mixer Attachment – Make Matcha at Home</title>
+<meta name="description" content="MashDaddy® Kitchen Stand Mixer Suribachi with Pestle makes green tea matcha with no sugar, additives, foaming agents or green dyes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1f2326;
+    --muted: #5a6269;
+    --line: #e3e1dc;
+    --soft: #f5f4f1;
+    --paper: #ffffff;
+    --orange: #F28500;
+    --orange-text: #A85600;
+    --radius: 8px;
+    --max: 1120px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--paper);
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--orange-text); text-underline-offset: 3px; }
+  a:hover { color: var(--ink); }
+  :focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 4px; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; }
+
+  /* Header */
+  .site-header { border-bottom: 1px solid var(--line); background: var(--paper); position: sticky; top: 0; z-index: 10; }
+  .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: .75rem; padding-bottom: .75rem; }
+  .brand img { height: 44px; width: auto; }
+  .nav { display: flex; align-items: center; gap: 1.5rem; font-size: .95rem; font-weight: 500; }
+  .nav a.link { color: var(--ink); text-decoration: none; }
+  .nav a.link:hover { color: var(--orange-text); text-decoration: underline; }
+
+  /* Buttons */
+  .btn {
+    display: inline-block; padding: .8rem 1.4rem; border-radius: var(--radius);
+    background: var(--orange); color: var(--ink); font-weight: 700; text-decoration: none;
+    border: 2px solid var(--orange); transition: background .15s, border-color .15s;
+  }
+  .btn:hover { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .btn.small { padding: .5rem 1rem; font-size: .95rem; }
+  .btn.ghost { background: transparent; border-color: var(--ink); color: var(--ink); }
+  .btn.ghost:hover { background: var(--ink); color: #fff; }
+
+  /* Hero */
+  .hero { padding: 4rem 0; }
+  .hero .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 3.5rem; align-items: center; }
+  .badge { display: inline-block; background: var(--ink); color: #fff; font-size: .8rem; font-weight: 700; padding: .25rem .7rem; border-radius: 999px; margin-bottom: 1.25rem; }
+  h1 { font-size: clamp(2.1rem, 4.6vw, 3.4rem); line-height: 1.08; letter-spacing: -0.02em; font-weight: 800; margin: 0 0 1.25rem; }
+  .lead { font-size: 1.2rem; color: var(--muted); max-width: 34rem; margin: 0 0 2rem; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: .75rem; }
+  .hero-img { border-radius: var(--radius); border: 1px solid var(--line); background: var(--soft); overflow: hidden; }
+  .hero-img img { width: 100%; }
+
+  /* Sections */
+  section { padding: 4rem 0; }
+  section.alt { background: var(--soft); }
+  h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.15; letter-spacing: -0.015em; font-weight: 800; margin: 0 0 .75rem; }
+  .section-intro { color: var(--muted); max-width: 40rem; margin: 0 0 2.5rem; }
+
+  /* Gallery */
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
+  .gallery figure { margin: 0; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  .gallery img { width: 100%; aspect-ratio: 1; object-fit: contain; }
+
+  /* Watch / learn cards */
+  .links { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+  .link-card { display: block; padding: 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); color: var(--ink); text-decoration: none; }
+  .link-card strong { display: block; font-size: 1.1rem; margin-bottom: .25rem; }
+  .link-card span { color: var(--muted); font-size: .95rem; }
+  .link-card:hover { border-color: var(--ink); }
+  .link-card:hover strong { color: var(--orange-text); text-decoration: underline; }
+
+  /* Uses */
+  .uses details { border-top: 1px solid var(--line); }
+  .uses details:last-of-type { border-bottom: 1px solid var(--line); }
+  .uses summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; padding: 1.1rem 0; font-weight: 700; font-size: 1.1rem; }
+  .uses summary::-webkit-details-marker { display: none; }
+  .uses summary::after { content: '+'; font-size: 1.5rem; font-weight: 500; color: var(--orange-text); line-height: 1; }
+  .uses details[open] summary::after { content: '–'; }
+  .uses ol { margin: 0 0 1.25rem; padding-left: 1.5rem; columns: 2; column-gap: 3rem; }
+  .uses li { break-inside: avoid; margin-bottom: .6rem; }
+  .uses li b { font-weight: 700; }
+  .uses .closing { margin-top: 2rem; color: var(--muted); max-width: 40rem; }
+
+  /* Footer */
+  footer { background: var(--ink); color: #d8dadc; padding: 3rem 0; font-size: .95rem; }
+  footer a { color: #fff; }
+  footer p { margin: 0 0 .75rem; }
+  footer .legal { font-size: .8rem; color: #a4a9ad; max-width: 52rem; margin-top: 1.5rem; }
+
+  @media (max-width: 820px) {
+    .hero { padding: 2.5rem 0; }
+    .hero .wrap { grid-template-columns: 1fr; gap: 2rem; }
+    .hero-img { order: -1; max-width: 420px; }
+    .nav a.link { display: none; }
+    .uses ol { columns: 1; }
+    section { padding: 3rem 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="MashDaddy home"><img src="images/logo.png" alt="MashDaddy" width="176" height="44"></a>
+    <nav class="nav" aria-label="Main">
+      <a class="link" href="#gallery">Gallery</a>
+      <a class="link" href="#watch">Videos</a>
+      <a class="link" href="#uses">50 uses</a>
+      <a class="btn small" href="https://mashdaddy.etsy.com/">Shop on Etsy</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="badge">New</span>
+        <h1>Make real matcha in your stand mixer.</h1>
+        <p class="lead">The MashDaddy® Suribachi with Pestle grinds tea leaves into green tea matcha with no sugar, additives, foaming agents or green dyes.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://mashdaddy.etsy.com/">Buy mixer attachments on Etsy</a>
+          <a class="btn ghost" href="#watch">See it in action</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="images/hero.png" alt="MashDaddy sign" width="500" height="600">
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="alt">
+    <div class="wrap">
+      <h2>The attachments</h2>
+      <p class="section-intro">Suribachi bowls and pestles that fit your tilt-head stand mixer, in several finishes.</p>
+      <div class="gallery">
+        <figure><img loading="lazy" src="images/suribachi-1.png" alt="MashDaddy suribachi attachment"></figure>
+        <figure><img loading="lazy" src="images/gallery-1.jpg" alt="MashDaddy suribachi and pestle"></figure>
+        <figure><img loading="lazy" src="images/blue-bowl.png" alt="Blue pestle with bowl"></figure>
+        <figure><img loading="lazy" src="images/suribachi-2.png" alt="MashDaddy suribachi attachment, second view"></figure>
+        <figure><img loading="lazy" src="images/red.jpg" alt="Red pestle with hammered bowl"></figure>
+        <figure><img loading="lazy" src="images/suribachi-4.png" alt="MashDaddy suribachi attachment, fourth view"></figure>
+        <figure><img loading="lazy" src="images/suribachi-5.png" alt="MashDaddy suribachi attachment, fifth view"></figure>
+        <figure><img loading="lazy" src="images/gallery-5.png" alt="MashDaddy attachment on a stand mixer"></figure>
+        <figure><img loading="lazy" src="images/gallery-8.jpg" alt="MashDaddy attachment in use"></figure>
+        <figure><img loading="lazy" src="images/gallery-9.png" alt="MashDaddy attachment close-up"></figure>
+        <figure><img loading="lazy" src="images/tilt-head-sieve.jpg" alt="Tilt-head mixer with sieve"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="watch">
+    <div class="wrap">
+      <h2>Watch and learn</h2>
+      <p class="section-intro">Short demos, recipes and traditional preparations.</p>
+      <div class="links">
+        <a class="link-card" href="https://www.tiktok.com/t/ZT2f1htsr/"><strong>Videos on TikTok</strong><span>Quick demos of the attachments at work.</span></a>
+        <a class="link-card" href="https://youtu.be/kSYDyf0HANw"><strong>French aioli on YouTube</strong><span>Garlic and olive oil emulsion, start to finish.</span></a>
+        <a class="link-card" href="https://trumedicines.github.io/MashDaddy/Chinese%20herbal%20recipes.html"><strong>Chinese herbal medicine recipes</strong><span>Traditional preparations ground with mortar and pestle.</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="uses" class="alt uses">
+    <div class="wrap">
+      <h2>50 things to crush</h2>
+      <p class="section-intro">The mortar and pestle is the oldest kitchen tool for grinding, crushing and blending. Here are 50 of the most popular recipes and uses.</p>
+
+      <details open>
+        <summary>Sauces, pastes and condiments</summary>
+        <ol>
+          <li><b>Pesto</b> – Classic Italian sauce with basil, garlic, pine nuts, Parmesan and olive oil.</li>
+          <li><b>Guacamole</b> – Traditional Mexican avocado dip with lime, onion, cilantro and jalapeño.</li>
+          <li><b>Aioli</b> – Garlic and olive oil emulsion, often made with egg yolk.</li>
+          <li><b>Chimichurri</b> – Argentinian herb sauce with parsley, garlic, oregano and vinegar.</li>
+          <li><b>Salsa verde</b> – Mexican green sauce made with tomatillos, cilantro and chilies.</li>
+          <li><b>Harissa</b> – North African chili paste with cumin, coriander, garlic and olive oil.</li>
+          <li><b>Gremolata</b> – Italian condiment with parsley, lemon zest and garlic.</li>
+          <li><b>Curry paste</b> – Thai or Indian blend of spices, garlic, ginger and chilies.</li>
+          <li><b>Tapenade</b> – Mediterranean olive paste with capers, anchovies and garlic.</li>
+          <li><b>Sambal oelek</b> – Indonesian chili paste with vinegar and salt.</li>
+          <li><b>Romesco sauce</b> – Spanish sauce with roasted red peppers, almonds and garlic.</li>
+          <li><b>Adobo paste</b> – Mexican seasoning blend of chilies, garlic, vinegar and spices.</li>
+          <li><b>Barbecue dry rub</b> – Blending spices like paprika, cumin and brown sugar.</li>
+          <li><b>Garlic butter</b> – Crushed garlic mixed into softened butter for spreading.</li>
+          <li><b>Horseradish paste</b> – Fresh horseradish root ground with vinegar.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Spice blends and seasonings</summary>
+        <ol start="16">
+          <li><b>Garam masala</b> – Indian spice mix with cumin, coriander, cardamom and more.</li>
+          <li><b>Za’atar</b> – Middle Eastern mix of thyme, sesame seeds and sumac.</li>
+          <li><b>Chinese five-spice</b> – Blend of star anise, cloves, cinnamon, Sichuan peppercorns and fennel.</li>
+          <li><b>Dukkah</b> – Egyptian mix of nuts, seeds and spices.</li>
+          <li><b>Ras el hanout</b> – Moroccan spice mix with cinnamon, nutmeg, turmeric and more.</li>
+          <li><b>Herbes de Provence</b> – French blend of dried herbs like rosemary, thyme and oregano.</li>
+          <li><b>Berbere spice</b> – Ethiopian mix with chili, fenugreek and allspice.</li>
+          <li><b>Pumpkin spice mix</b> – Cinnamon, nutmeg, ginger and cloves.</li>
+          <li><b>Homemade curry powder</b> – Toasted and ground cumin, coriander, turmeric and fenugreek.</li>
+          <li><b>Salt blends</b> – Mixing sea salt with citrus zest, herbs or spices.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Beverages and cocktails</summary>
+        <ol start="26">
+          <li><b>Mojito muddling</b> – Crushing mint and lime for fresh mojitos.</li>
+          <li><b>Caipirinha</b> – Muddled lime and sugar with cachaça.</li>
+          <li><b>Herbal tea blends</b> – Grinding dried herbs like chamomile and lavender.</li>
+          <li><b>Golden milk mix</b> – Turmeric, ginger, cinnamon and black pepper blend.</li>
+          <li><b>Spiced chai masala</b> – Grinding spices like cardamom, cinnamon and cloves for chai.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Dips and spreads</summary>
+        <ol start="31">
+          <li><b>Baba ganoush</b> – Roasted eggplant dip with tahini, garlic and lemon.</li>
+          <li><b>Hummus</b> – Blending chickpeas, tahini, garlic and lemon.</li>
+          <li><b>Nut butters</b> – Homemade peanut, almond or cashew butter.</li>
+          <li><b>Labneh with spices</b> – Yogurt cheese topped with ground spices.</li>
+          <li><b>Herbed cream cheese</b> – Mixing garlic, herbs and spices into cream cheese.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Grains and nuts</summary>
+        <ol start="36">
+          <li><b>Rice flour</b> – Grinding rice into a fine flour.</li>
+          <li><b>Polenta or cornmeal</b> – Crushing dried corn kernels.</li>
+          <li><b>Nut meal</b> – Almond flour or hazelnut meal for baking.</li>
+          <li><b>Chia or flaxseed powder</b> – Grinding seeds for smoothies or baking.</li>
+          <li><b>Sesame seed paste</b> – Grinding sesame seeds for tahini.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Desserts and sweets</summary>
+        <ol start="41">
+          <li><b>Chocolate chunks</b> – Crushing chocolate for cookies and brownies.</li>
+          <li><b>Crushed nuts</b> – Almonds, walnuts or pecans for toppings and fillings.</li>
+          <li><b>Cardamom sugar</b> – Grinding cardamom with sugar for baking.</li>
+          <li><b>Homemade marshmallow powder</b> – Crushing dried marshmallows for hot cocoa.</li>
+          <li><b>Mastic gum powder</b> – Used in Greek desserts.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Miscellaneous uses</summary>
+        <ol start="46">
+          <li><b>Crushing medications</b> – Turning pills into powder for easier consumption.</li>
+          <li><b>Homemade tooth powder</b> – Mixing baking soda, salt and mint.</li>
+          <li><b>Incense and herbal blends</b> – Grinding dried herbs for aromatherapy.</li>
+          <li><b>Natural dye powders</b> – Crushing berries, spices and plants for fabric dyeing.</li>
+          <li><b>Homemade cleaning scrubs</b> – Mixing coarse salt, lemon peel and baking soda.</li>
+        </ol>
+      </details>
+
+      <p class="closing">A mortar and pestle unlocks deep flavors and fresh aromas that pre-ground spices or blended pastes can’t match.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Contact us: <a href="mailto:magic@mashdaddy.com">magic@mashdaddy.com</a></p>
+    <p>© Copyright MashDaddy® 2010–2026. Protected US &amp; international patents. All rights reserved.</p>
+    <p class="legal">You may not use the MashDaddy® Mark to disparage MashDaddy or any MashDaddy affiliate, their products or services, or in a manner which, in MashDaddy’s sole discretion, may diminish or otherwise damage or tarnish MashDaddy’s goodwill in the Marks, including, for example, use with other marks.</p>
+  </div>
+</footer>
+
+</body>
+</html>
